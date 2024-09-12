@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="selenium_java_gradle_allure.CoffeeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-09-12T11:35:20" hostname="PL-TQ-235" time="2.6">
+  <properties/>
+  <testcase name="AddOneToCartAndVerifyPrice" classname="selenium_java_gradle_allure.CoffeeTest" time="2.005"/>
+  <testcase name="AddThreeToCartAndVerifyPrice" classname="selenium_java_gradle_allure.CoffeeTest" time="0.352"/>
+  <testcase name="TestNavigateToSite" classname="selenium_java_gradle_allure.CoffeeTest" time="0.131"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
