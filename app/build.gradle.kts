@@ -8,6 +8,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    id("io.qameta.allure") version "2.12.0"
 }
 
 repositories {
@@ -19,9 +20,7 @@ repositories {
 dependencies {
     testImplementation("org.testng:testng:7.1.0")
 	implementation("org.seleniumhq.selenium:selenium-java:4.24.0")
-    //implementation("org.testng:testng:7.1.0")
-	implementation("io.qameta.allure:allure-java-commons:2.13.3")
-	//runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.6.10'
+	implementation("io.qameta.allure:allure-testng:2.19.0")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
