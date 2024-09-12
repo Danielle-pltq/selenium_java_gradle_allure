@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Sep 12 12:37:46 GMT 2024","Thu Sep 12 12:37:47 GMT 2024","312","Gradle suite","Gradle test","selenium_java_gradle_allure.CoffeeTest","selenium_java_gradle_allure.CoffeeTest","AddThreeToCartAndVerifyPrice","AddThreeToCartAndVerifyPrice",""
+"passed","Thu Sep 12 12:37:45 GMT 2024","Thu Sep 12 12:37:46 GMT 2024","1301","Gradle suite","Gradle test","selenium_java_gradle_allure.CoffeeTest","selenium_java_gradle_allure.CoffeeTest","AddOneToCartAndVerifyPrice","AddOneToCartAndVerifyPrice",""
+"passed","Thu Sep 12 12:37:47 GMT 2024","Thu Sep 12 12:37:47 GMT 2024","62","Gradle suite","Gradle test","selenium_java_gradle_allure.CoffeeTest","selenium_java_gradle_allure.CoffeeTest","TestNavigateToSite","TestNavigateToSite",""
