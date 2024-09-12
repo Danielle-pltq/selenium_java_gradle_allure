@@ -19,6 +19,7 @@ repositories {
 
 dependencies {
     testImplementation("org.testng:testng:7.1.0")
+    testImplementation("io.github.bonigarcia:webdrivermanager:5.9.2")
 	implementation("org.seleniumhq.selenium:selenium-java:4.24.0")
 	implementation("io.qameta.allure:allure-testng:2.19.0")
 }

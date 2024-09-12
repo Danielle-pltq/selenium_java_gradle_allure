@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 
 import org.testng.Assert;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class CoffeeTest {
 
     WebDriver driver;
@@ -17,13 +19,12 @@ public class CoffeeTest {
     @BeforeTest
     public void SetUp() {
         // setting the driver executable
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
-                "/src/test/resources/drivers/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-search-engine-choice-screen");
-
-        // Initiating your chromedriver
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
     }
 
