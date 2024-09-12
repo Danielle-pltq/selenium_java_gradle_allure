@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","60","TestNavigateToSite","Gradle suite","Thu Sep 12 14:33:32 CEST 2024","passed","Thu Sep 12 14:33:32 CEST 2024","selenium_java_gradle_allure.CoffeeTest","Gradle test","selenium_java_gradle_allure.CoffeeTest","TestNavigateToSite"
+"","308","AddThreeToCartAndVerifyPrice","Gradle suite","Thu Sep 12 14:33:31 CEST 2024","passed","Thu Sep 12 14:33:32 CEST 2024","selenium_java_gradle_allure.CoffeeTest","Gradle test","selenium_java_gradle_allure.CoffeeTest","AddThreeToCartAndVerifyPrice"
+"","1915","AddOneToCartAndVerifyPrice","Gradle suite","Thu Sep 12 14:33:29 CEST 2024","passed","Thu Sep 12 14:33:31 CEST 2024","selenium_java_gradle_allure.CoffeeTest","Gradle test","selenium_java_gradle_allure.CoffeeTest","AddOneToCartAndVerifyPrice"
