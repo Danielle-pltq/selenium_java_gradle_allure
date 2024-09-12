@@ -2,13 +2,11 @@ package selenium_java_gradle_allure;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class TestHelpers {
+public class CoffeeTestHelpers {
     public static By CartTotal = By.xpath("//button[contains(@data-test, 'checkout')]");
 
     public static String NavigateToSite(WebDriver drv, String url) {

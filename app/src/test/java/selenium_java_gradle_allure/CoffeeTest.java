@@ -30,24 +30,24 @@ public class CoffeeTest {
 
     @Test
     public void TestNavigateToSite() {
-        String title = TestHelpers.NavigateToSite(driver, "https://coffee-cart.app/");
+        String title = CoffeeTestHelpers.NavigateToSite(driver, "https://coffee-cart.app/");
         Assert.assertEquals(title, "Coffee cart");
     }
 
     @Test
     public void AddOneToCartAndVerifyPrice() {
-        TestHelpers.NavigateToSite(driver, "https://coffee-cart.app/");
-        TestHelpers.AddToCart(driver, "Espresso");
-        Assert.assertEquals(TestHelpers.GetCartTotal(driver), 10.00);
+        CoffeeTestHelpers.NavigateToSite(driver, "https://coffee-cart.app/");
+        CoffeeTestHelpers.AddToCart(driver, "Espresso");
+        Assert.assertEquals(CoffeeTestHelpers.GetCartTotal(driver), 10.00);
     }
 
     @Test
     public void AddThreeToCartAndVerifyPrice() {
-        TestHelpers.NavigateToSite(driver, "https://coffee-cart.app/");
-        TestHelpers.AddToCart(driver, "Cappuccino");
-        TestHelpers.AddToCart(driver, "Americano");
-        TestHelpers.AddToCart(driver, "Cafe_Breve");
-        Assert.assertEquals(TestHelpers.GetCartTotal(driver), 41.00);
+        CoffeeTestHelpers.NavigateToSite(driver, "https://coffee-cart.app/");
+        CoffeeTestHelpers.AddToCart(driver, "Cappuccino");
+        CoffeeTestHelpers.AddToCart(driver, "Americano");
+        CoffeeTestHelpers.AddToCart(driver, "Cafe_Breve");
+        Assert.assertEquals(CoffeeTestHelpers.GetCartTotal(driver), 41.00);
     }
 
     @AfterTest
