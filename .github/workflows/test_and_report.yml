@@ -24,7 +24,7 @@ jobs:
               run: ./gradlew clean test
 
             - name: Load test report history
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
               if: always()
               continue-on-error: true
               with:
