@@ -1,9 +1,11 @@
-package selenium_java_gradle_allure;
+package selenium_java_gradle_allure.CoffeeTests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import selenium_java_gradle_allure.GenericTestHelpers;
 
 import org.testng.Assert;
 

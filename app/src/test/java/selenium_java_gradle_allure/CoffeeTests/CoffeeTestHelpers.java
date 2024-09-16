@@ -1,4 +1,4 @@
-package selenium_java_gradle_allure;
+package selenium_java_gradle_allure.CoffeeTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
