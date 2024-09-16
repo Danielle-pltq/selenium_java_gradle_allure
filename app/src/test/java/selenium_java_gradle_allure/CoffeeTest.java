@@ -14,7 +14,7 @@ public class CoffeeTest {
 
     @BeforeTest
     public void SetUp() {
-        driver = GenericTestHelpers.getHeadlessDriver("edge");
+        driver = GenericTestHelpers.getHeadlessDriver("chrome");
     }
 
     @Test
