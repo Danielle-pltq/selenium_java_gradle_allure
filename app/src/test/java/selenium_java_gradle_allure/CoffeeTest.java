@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 
 public class CoffeeTest {
+    private static final double DELTA = 1e-15;
 
     WebDriver driver;
 
@@ -26,7 +27,7 @@ public class CoffeeTest {
     public void AddOneToCartAndVerifyPrice() {
         CoffeeTestHelpers.NavigateToSite(driver, "https://coffee-cart.app/");
         CoffeeTestHelpers.AddToCart(driver, "Espresso");
-        Assert.assertEquals(CoffeeTestHelpers.GetCartTotal(driver), 10.00);
+        Assert.assertEquals(CoffeeTestHelpers.GetCartTotal(driver), 10.00, DELTA);
     }
 
     @Test
@@ -35,7 +36,7 @@ public class CoffeeTest {
         CoffeeTestHelpers.AddToCart(driver, "Cappuccino");
         CoffeeTestHelpers.AddToCart(driver, "Americano");
         CoffeeTestHelpers.AddToCart(driver, "Cafe_Breve");
-        Assert.assertEquals(CoffeeTestHelpers.GetCartTotal(driver), 41.00);
+        Assert.assertEquals(CoffeeTestHelpers.GetCartTotal(driver), 41.00, DELTA);
     }
 
     @AfterTest

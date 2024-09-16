@@ -21,6 +21,8 @@ dependencies {
     testImplementation("io.github.bonigarcia:webdrivermanager:5.9.2")
 	implementation("org.seleniumhq.selenium:selenium-java:4.24.0")
 	implementation("io.qameta.allure:allure-testng:2.19.0")
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation("org.slf4j:slf4j-api:1.7.25")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
