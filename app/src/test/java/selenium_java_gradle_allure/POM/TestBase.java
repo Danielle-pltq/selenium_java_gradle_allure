@@ -1,24 +1,34 @@
 package selenium_java_gradle_allure.POM;
 
+import java.time.Duration;
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import selenium_java_gradle_allure.GenericTestHelpers;
 
 public class TestBase {
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
-    @BeforeMethod
+    @BeforeTest
     public void Setup() {
         driver = GenericTestHelpers.getHeadlessDriver("chrome");
-        driver.get("https://testshop.polteq-testing.com/en/login");
+        // driver = GenericTestHelpers.getDriver("chrome", false);
     }
 
-    @AfterMethod
+    @AfterTest
     public void TearDown() {
         driver.quit();
     }
 
+    public void waitForVisibility(WebElement element) throws Error {
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOf(element));
+    }
 }

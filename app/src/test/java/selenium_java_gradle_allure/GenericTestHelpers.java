@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GenericTestHelpers {
 
-    public static List<String> BrowserOptions(boolean headless) {
+    private static List<String> BrowserOptions(boolean headless) {
         if (headless) {
             return Arrays.asList("--disable-search-engine-choice-screen", "--no-sandbox", "--headless",
                     "--start-maximized");
