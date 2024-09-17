@@ -8,7 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends TestBase {
+public class LoginPage {
+
+    private WebDriver driver;
+
     @FindBy(css = "input[type='email']")
     private WebElement emailTextField;
 
@@ -32,15 +35,15 @@ public class LoginPage extends TestBase {
 
     public Object clickLoginButton() {
         loginButton.click();
-        if (driver.findElements(errorMessageBy).size() != 0) {
+        if (TestBase.driver.findElements(errorMessageBy).size() != 0) {
             return this; // Return the LoginPage if there's an error
         } else {
-            return new HomePage(); // Return the HomePage if login is successful
+            return new HomePage(driver); // Return the HomePage if login is successful
         }
     }
 
     public LoginPage(WebDriver driver) {
-        // this.driver = driver;
+        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 }

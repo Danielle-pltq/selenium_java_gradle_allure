@@ -14,7 +14,7 @@ import selenium_java_gradle_allure.GenericTestHelpers;
 
 public class TestBase {
 
-    protected static WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeTest
     public void Setup() {
@@ -25,10 +25,5 @@ public class TestBase {
     @AfterTest
     public void TearDown() {
         driver.quit();
-    }
-
-    public void waitForVisibility(WebElement element) throws Error {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOf(element));
     }
 }
