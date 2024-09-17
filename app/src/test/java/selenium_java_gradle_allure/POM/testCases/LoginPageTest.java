@@ -44,6 +44,7 @@ public class LoginPageTest extends TestBase {
 
         Assert.assertEquals(page instanceof LoginPage, true);
         Assert.assertEquals(driver.getTitle(), "Login");
+        Assert.assertEquals(loginPage.IsInvalidLoginErrorPresent(), true);
     }
 
 }

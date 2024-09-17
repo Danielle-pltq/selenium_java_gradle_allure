@@ -1,7 +1,5 @@
 package selenium_java_gradle_allure.POM.pages;
 
-import selenium_java_gradle_allure.POM.TestBase;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,7 +33,7 @@ public class LoginPage {
 
     public Object clickLoginButton() {
         loginButton.click();
-        if (TestBase.driver.findElements(errorMessageBy).size() != 0) {
+        if (IsInvalidLoginErrorPresent()) {
             return this; // Return the LoginPage if there's an error
         } else {
             return new HomePage(driver); // Return the HomePage if login is successful
@@ -45,5 +43,9 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public boolean IsInvalidLoginErrorPresent() {
+        return driver.findElements(errorMessageBy).size() != 0;
     }
 }
