@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductdetailPage {
     private WebDriver driver;
-    private String itemName;
 
     @FindBy(id = "product")
     private WebElement productPage;
